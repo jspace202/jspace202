@@ -1,0 +1,43 @@
+name: Contribution animation
+
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/contributions.yml
+
+permissions: {}
+
+concurrency:
+  group: contribution-animation
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Generate light and dark animations
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b
+        with:
+          github_user_name: jspace202
+          outputs: |
+            dist/github-snake.svg?color_snake=%230f766e&color_dots=%23ebedf0,%23ccfbf1,%235eead4,%2314b8a6,%230f766e
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=%235eead4&color_dots=%23161b22,%2313423d,%23115e59,%230d9488,%232dd4bf
+      - name: Publish animation assets
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+          allow_empty_commit: false
+          jekyll: false
+          commit_message: Update contribution animation
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

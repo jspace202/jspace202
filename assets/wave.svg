@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" role="img" aria-label="Waving hand">
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      .hand { animation: wave 8s ease-in-out infinite; transform-origin: 23px 25px; }
+      @keyframes wave {
+        0%, 20%, 100% { transform: rotate(0deg); }
+        5%, 15% { transform: rotate(12deg); }
+        10% { transform: rotate(-8deg); }
+      }
+    }
+  </style>
+  <text class="hand" x="2" y="25" font-size="24" font-family="Segoe UI Emoji,Apple Color Emoji,Noto Color Emoji,sans-serif">👋</text>
+</svg>
