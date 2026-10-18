@@ -1,6 +1,4 @@
-Hi there <img src="assets/wave.svg" width="28" height="28" alt="Waving hand">
-
-# Jaden Patel
+# Hi there, I'm Jaden Patel<img src="assets/wave.svg" width="28" height="28" alt="Waving hand">
 
 **Software Engineer | AI Power-User**
 
@@ -90,7 +88,7 @@ RAG · LLMOps · MLOps · System Design · JWT Auth · CORS · Rate Limiting
 
 <a href="https://github.com/jspace202?tab=overview#contributions">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jspace202/jspace202/output/github-snake-dark.svg">
-    <img alt="Animated snake tracing Jaden Patel's GitHub contribution activity" src="https://raw.githubusercontent.com/jspace202/jspace202/output/github-snake.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jspace202/jspace202/output/github-snake-dark.svg?v=2">
+    <img alt="Animated snake tracing Jaden Patel's GitHub contribution activity" src="https://raw.githubusercontent.com/jspace202/jspace202/output/github-snake.svg?v=2" width="100%">
   </picture>
 </a>
