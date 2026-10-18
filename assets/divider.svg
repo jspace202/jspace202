@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="32" viewBox="0 0 880 32" preserveAspectRatio="none">
+  <defs>
+    <path id="wave" d="M0 16c36.667-13.333 73.333-13.333 110 0s73.333 13.333 110 0c36.667-13.333 73.333-13.333 110 0s73.333 13.333 110 0c36.667-13.333 73.333-13.333 110 0s73.333 13.333 110 0c36.667-13.333 73.333-13.333 110 0s73.333 13.333 110 0c36.667-13.333 73.333-13.333 110 0s73.333 13.333 110 0"/>
+    <linearGradient id="edges">
+      <stop stop-color="white" stop-opacity="0"/>
+      <stop offset=".08" stop-color="white"/>
+      <stop offset=".92" stop-color="white"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fade">
+      <rect width="880" height="32" fill="url(#edges)"/>
+    </mask>
+  </defs>
+  <style>
+    .secondary { transform: translateX(-110px); }
+    @media (prefers-reduced-motion: no-preference) {
+      .primary { animation: flow 8s linear infinite; }
+      .secondary { animation: counterflow 12s linear infinite; }
+      @keyframes flow {
+        from { transform: translateX(0); }
+        to { transform: translateX(-220px); }
+      }
+      @keyframes counterflow {
+        from { transform: translateX(-220px); }
+        to { transform: translateX(0); }
+      }
+    }
+  </style>
+  <g mask="url(#fade)" fill="none" stroke-linecap="round">
+    <g class="primary">
+      <use href="#wave" stroke="#14b8a6" stroke-width="7" opacity=".12"/>
+      <use href="#wave" stroke="#2dd4bf" stroke-width="2"/>
+    </g>
+    <use class="secondary" href="#wave" stroke="#99f6e4" stroke-width="1.5" opacity=".4"/>
+  </g>
+</svg>

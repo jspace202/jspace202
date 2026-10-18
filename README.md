@@ -2,6 +2,8 @@
 
 **Software Engineer | AI Power-User**
 
+<img src="assets/divider.svg?v=3" width="100%" height="32" alt="">
+
 I've designed, implemented, and deployed web and mobile applications across Web, iOS, and Android. Developing across frontend, backend, and cloud (AWS) with a focus on performance via optimized system design and aesthetic, responsive, and accessible UI designs.
 
 - 🎓 Bachelor’s in Computer Engineering from Oklahoma State University
